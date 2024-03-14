@@ -69,10 +69,10 @@ export default function App() {
   const [loggedIn, setLoggedIn] = useState(undefined);
 
   const handleLogin = (code) => {
-    console.log(code);
+    console.log("code",code);
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-    myHeaders.append("Authorization", `Basic ${clientId}:${clientSecret}`);
+    myHeaders.append("Authorization", 'Basic dVpuNlZTZ3VFWWxJb3R5RmNCM1ZFUTozTGdMMkIxOWdTYmIyTHY4UVBNNVAtTExEaHd3UFE=');
 
     var urlencoded = new URLSearchParams();
     urlencoded.append("grant_type", "authorization_code");
@@ -83,7 +83,7 @@ export default function App() {
       method: 'POST',
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic ${clientId}:${clientSecret}`,
+        Authorization: 'Basic dVpuNlZTZ3VFWWxJb3R5RmNCM1ZFUTozTGdMMkIxOWdTYmIyTHY4UVBNNVAtTExEaHd3UFE=',
       },
       body: `grant_type=authorization_code&code=${code}&redirect_uri=http://localhost:3000/callback`,
       redirect: 'follow'
