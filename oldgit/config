@@ -1,0 +1,23 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:EpitechCodingAcademyPromo2024/C-COD-290-PAR-2-1-epicture-diane1.robilliard.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "master1.0"]
+	remote = origin
+	merge = refs/heads/master1.0
+[branch "diane1.1"]
+	remote = origin
+	merge = refs/heads/diane1.1
+[branch "master1.2"]
+	remote = origin
+	merge = refs/heads/master1.2
+[branch "diane2.0"]
+	remote = origin
+	merge = refs/heads/diane2.0

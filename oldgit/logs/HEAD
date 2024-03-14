@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 3aac41d00ed78877dc8f01f91e545d7c385f66cb Diane <diane1.robilliard@epitech.eu> 1705317608 +0100	commit (initial): installation du projet
+3aac41d00ed78877dc8f01f91e545d7c385f66cb 3aac41d00ed78877dc8f01f91e545d7c385f66cb Diane <diane1.robilliard@epitech.eu> 1705332157 +0100	reset: moving to HEAD
+3aac41d00ed78877dc8f01f91e545d7c385f66cb 4f10044cdf3f8057f840b02c41f63c2c6b113b02 Diane <diane1.robilliard@epitech.eu> 1705333116 +0100	checkout: moving from master to master1.0
+4f10044cdf3f8057f840b02c41f63c2c6b113b02 4f10044cdf3f8057f840b02c41f63c2c6b113b02 Diane <diane1.robilliard@epitech.eu> 1705333226 +0100	checkout: moving from master1.0 to diane1.1
+4f10044cdf3f8057f840b02c41f63c2c6b113b02 fb987f8592bf838937e2ef6eb35f8708f4ea5f65 Diane <diane1.robilliard@epitech.eu> 1705488108 +0100	commit: Auth token
+fb987f8592bf838937e2ef6eb35f8708f4ea5f65 3aac41d00ed78877dc8f01f91e545d7c385f66cb Diane <diane1.robilliard@epitech.eu> 1705488242 +0100	checkout: moving from diane1.1 to master
+3aac41d00ed78877dc8f01f91e545d7c385f66cb 4f10044cdf3f8057f840b02c41f63c2c6b113b02 Diane <diane1.robilliard@epitech.eu> 1705488257 +0100	pull: Fast-forward
+4f10044cdf3f8057f840b02c41f63c2c6b113b02 9ad5d1b47d6ce2eafae561d37f9d5603f8d7087c Diane <diane1.robilliard@epitech.eu> 1705488287 +0100	checkout: moving from master to master1.2
+9ad5d1b47d6ce2eafae561d37f9d5603f8d7087c be053b8f49780b1b847ba44c785018954eee1237 Diane <diane1.robilliard@epitech.eu> 1705488812 +0100	pull origin master1.2: Fast-forward
+be053b8f49780b1b847ba44c785018954eee1237 fb987f8592bf838937e2ef6eb35f8708f4ea5f65 Diane <diane1.robilliard@epitech.eu> 1705488826 +0100	checkout: moving from master1.2 to diane1.1
+fb987f8592bf838937e2ef6eb35f8708f4ea5f65 0e983acb9b9758cf45d011e0f86d7ad3d60b5e7c Diane <diane1.robilliard@epitech.eu> 1705489328 +0100	commit (merge): merge diane1.1 et master1.2
+0e983acb9b9758cf45d011e0f86d7ad3d60b5e7c be053b8f49780b1b847ba44c785018954eee1237 Diane <diane1.robilliard@epitech.eu> 1705489423 +0100	checkout: moving from diane1.1 to master1.2
+be053b8f49780b1b847ba44c785018954eee1237 e0f05be1e42ad17f4a795e740ca377fce506981c Diane <diane1.robilliard@epitech.eu> 1705489441 +0100	pull: Fast-forward
+e0f05be1e42ad17f4a795e740ca377fce506981c e0f05be1e42ad17f4a795e740ca377fce506981c Diane <diane1.robilliard@epitech.eu> 1705489712 +0100	checkout: moving from master1.2 to diane2.0
+e0f05be1e42ad17f4a795e740ca377fce506981c 38e44aa589f64164fb5d4176a02db49358062a51 Diane <diane1.robilliard@epitech.eu> 1705590769 +0100	commit: Ajout Auth
+38e44aa589f64164fb5d4176a02db49358062a51 83019601c29647e411d7883395522cee2578a56e Diane <diane1.robilliard@epitech.eu> 1705661397 +0100	commit: Auth et storage token
+83019601c29647e411d7883395522cee2578a56e 1db833c34d1dd39da308c98c7c8f5b45b37e6bd2 Diane <diane1.robilliard@epitech.eu> 1705868420 +0100	commit: User interface fonctionnel
+1db833c34d1dd39da308c98c7c8f5b45b37e6bd2 aba1e5571b3710428831e43f76ab0458f72312f2 Diane <diane1.robilliard@epitech.eu> 1705876810 +0100	commit: sub-subreddit posts fonctionnel
+aba1e5571b3710428831e43f76ab0458f72312f2 48baf0def9e6aa2e69f14f48ef7dc5e574686716 Diane <diane1.robilliard@epitech.eu> 1705880047 +0100	commit: Finalisation du style
