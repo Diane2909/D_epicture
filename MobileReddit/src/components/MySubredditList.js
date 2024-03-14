@@ -22,6 +22,9 @@ const MySubredditList = () => {
       const postsData = {};
       for (const subreddit of subscribedSubreddits) {
         const posts = await fetchSubredditPosts(token, subreddit.display_name);
+        posts.forEach(post => {
+          post.description = post.selftext;
+        });
         postsData[subreddit.display_name] = posts;
       }
       setSubredditPosts(postsData);
@@ -41,7 +44,7 @@ const MySubredditList = () => {
         renderItem={({ item }) => (
           <MySubredditItem
             img={item.header_img}
-            title={item.display_name_prefixed}
+            title={item.display_name}
             description={item.public_description}
             subscribers={item.subscribers}
             onJoinPress={() => handleJoinPress(item)}

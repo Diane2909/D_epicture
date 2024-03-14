@@ -13,17 +13,17 @@ const Navbar = () => {
       </TouchableOpacity> */}
       <Image
         style={styles.logo}
-        source={require('../assets/images/mm.png')}
+        source={require('../assets/images/logo5.png')}
       />
       <View style={styles.iconsRight}>
         <TouchableOpacity onPress={() => {}}>
-          <Ionicons name="search" size={24} color="black" />
+          <Ionicons name="search" size={24} color="tomato" />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {}}>
-          <Ionicons name="add-circle-outline" size={24} color="black" />
+          <Ionicons name="add-circle-outline" size={24} color="gray" />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {}}>
-          <Ionicons name="notifications-outline" size={24} color="black" />
+          <Ionicons name="notifications-outline" size={24} color="gray" />
         </TouchableOpacity>
       </View>
     </View>
@@ -32,15 +32,15 @@ const Navbar = () => {
 
 const styles = StyleSheet.create({
   navbar: {
-    marginTop: 16,
+    marginTop: 36,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 20,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#141517',
   },
   logo: {
-    width: 50,
+    width: 65,
     height: 50,
     resizeMode: 'contain',
   },
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     width: 100,
+    
   },
 });
 

@@ -24,8 +24,8 @@ const SubredditList = () => {
         data={subreddits}
         renderItem={({ item }) => (
           <SubredditItem
-          img={item.icon_img}
-          title={item.display_name_prefixed}
+          img={item.mobile_banner_image}
+          title={item.display_name}
           description={item.public_description}
           subscribers={item.subscribers}
             onJoinPress={() => handleJoinPress(item)}

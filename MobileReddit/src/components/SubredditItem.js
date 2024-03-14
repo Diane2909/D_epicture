@@ -12,28 +12,32 @@ const SubredditItem = ({ title, description, onJoinPress, img, subscribers}) => 
         <Text style={styles.title}>{title}</Text>
         <View style={styles.actionsContainer}>
           <TouchableOpacity style={styles.button}>
-            <Icon name="ellipsis-h" size={20} />
+            <Icon name="ellipsis-h" size={16} />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={onJoinPress}>
-            <Text>Join</Text>
+          <TouchableOpacity style={styles.buttonJoin} onPress={onJoinPress}>
+            <Text style={styles.buttonTextJoin}>Join</Text>
           </TouchableOpacity>
         </View>
       </View>
       <Text style={styles.subscribers}>{subscribers} subscribers</Text>
       <Text style={styles.description}>{description}</Text>
+      <View style={styles.buttonContainer}>
       <View style={styles.voteContainer}>
         <TouchableOpacity style={styles.button}>
-          <Icon name="arrow-up" size={20} />
+          <Icon name="arrow-up" size={20} color='white'/>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Icon name="arrow-down" size={20} />
+          <Icon name="arrow-down" size={20} color='white'/>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
-          <Icon name="comment-o" size={20} />
+        </View>
+        <View style={styles.comContainer}>
+        <TouchableOpacity style={styles.buttonCom}>
+          <Icon name="comment" size={20} />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.buttonCom}>
           <Icon name="download" size={20} />
         </TouchableOpacity>
+      </View>
       </View>
     </View>
   );
@@ -63,7 +67,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize : 16,
+    fontSize : 20,
     color: 'black'
     },
     description: {
@@ -74,16 +78,36 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     },
-    voteContainer: {
+    buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
     marginTop: 8,
     },
+    voteContainer: {
+      flexDirection: 'row',
+      backgroundColor : '#C0C0C0',
+      borderRadius : 8,
+      },
+    comContainer: {
+    flexDirection: 'row',
+    },
     button: {
-    marginLeft: 8,
     padding: 8,
     },
+    buttonCom: {
+      padding: 8,
+      marginLeft: 7,
+      },
+    buttonJoin: {
+      marginLeft: 8,
+      padding: 12,
+      backgroundColor :'#005C96',
+      borderRadius : 12,      
+      },
+    buttonTextJoin: {
+      color : 'white'
+    }
     });
 
 export default SubredditItem;

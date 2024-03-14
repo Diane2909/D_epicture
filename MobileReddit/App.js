@@ -6,6 +6,14 @@ import BottomTabNavigator from './src/navigation/BottomTabNavigator';
 import WebView from 'react-native-webview';
 import { useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+// import { clientId, clientSecret, redirectUri, authorizationUrl } from './config';
+
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
+const redirectUri = process.env.REDIRECT_URI;
+const authorizationUrl = process.env.AUTHORIZATION_URL;
+const uri = process.env.URI;
+
 
 export const getAccessToken = async () => {
   try {
@@ -64,7 +72,7 @@ export default function App() {
     console.log(code);
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-    myHeaders.append("Authorization", "Basic dVpuNlZTZ3VFWWxJb3R5RmNCM1ZFUTozTGdMMkIxOWdTYmIyTHY4UVBNNVAtTExEaHd3UFE=");
+    myHeaders.append("Authorization", `Basic ${clientId}:${clientSecret}`);
 
     var urlencoded = new URLSearchParams();
     urlencoded.append("grant_type", "authorization_code");
@@ -75,7 +83,7 @@ export default function App() {
       method: 'POST',
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic dVpuNlZTZ3VFWWxJb3R5RmNCM1ZFUTozTGdMMkIxOWdTYmIyTHY4UVBNNVAtTExEaHd3UFE=`,
+        Authorization: `Basic ${clientId}:${clientSecret}`,
       },
       body: `grant_type=authorization_code&code=${code}&redirect_uri=http://localhost:3000/callback`,
       redirect: 'follow'
@@ -104,7 +112,7 @@ export default function App() {
     }
     }}
     source={{
-      uri: 'https://www.reddit.com/api/v1/authorize?client_id=uZn6VSguEYlIotyFcB3VEQ&response_type=code&state=cocomelon&redirect_uri=http://localhost:3000/callback&duration=temporary&scope=subscribe,identity,read,vote,mysubreddits'
+      uri: `https://www.reddit.com/api/v1/authorize?client_id=uZn6VSguEYlIotyFcB3VEQ&response_type=code&state=cocomelon&redirect_uri=http://localhost:3000/callback&duration=temporary&scope=subscribe,identity,read,vote,mysubreddits`
     }}/>)
   } else {
   return (
@@ -121,7 +129,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#202225',
   },
   content: {
     flex: 1,

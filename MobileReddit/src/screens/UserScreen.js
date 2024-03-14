@@ -30,15 +30,21 @@ const UserScreen = () => {
   return (
     <View style={styles.container}>
         <Image
-          style={styles.userIcon}
-          source={{ uri: userInfo?.subreddit?.icon_img }}
+        style={styles.userBanner}
+        source={require('../assets/images/banner.png')}
         />
-        <Text style={styles.username}>{userInfo?.subreddit?.display_name}</Text>
+        <View style={styles.containerIcon}>
+        <Image
+          style={styles.userIcon}
+          source={require('../assets/images/avatar.png')}
+        />
+        <Text style={styles.username}>{userInfo?.subreddit?.display_name_prefixed}</Text>
+        </View>
         <Text style={styles.description}>{userInfo?.subreddit?.public_description}</Text>
         <Text>{userInfo?.subreddit?.subscribers} abonnés</Text>
         <Text>{userInfo?.subreddit?.coins} coins</Text>
         <Text>{userInfo?.total_karma} karmas</Text>
-        
+        <Text>{userInfo?.num_friends} friends</Text>        
     </View>
   );
 };
@@ -50,11 +56,20 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
     },
+    containerIcon: {
+      flexDirection: "row",
+      paddingVertical: 12,
+      alignItems: "center",
+    },
     userIcon: {
         width: 30,
         height: 30,
         borderRadius: 15,
         marginRight: 8,
+    },
+    userBanner: {
+      width: "100%",
+      height: 90,
     },
     username: {
     fontWeight: 'bold',
@@ -63,6 +78,7 @@ const styles = StyleSheet.create({
     description: {
     fontSize: 14,
     color: 'grey',
+    marginBottom: 12
     },
    
     });

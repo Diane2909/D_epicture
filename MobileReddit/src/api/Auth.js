@@ -3,7 +3,7 @@ import { authorize } from 'react-native-app-auth'
 
 const config = {
     redirectUrl: 'http://localhost:3000/callback',
-    clientId: 'uZn6VSguEYlIotyFcB3VEQ',
+    clientId: process.env.CLIENT_ID,
     scopes: ['identity','read'],
     serviceConfiguration: {
         authorizationEndpoint: 'https://www.reddit.com/api/v1/authorize',
